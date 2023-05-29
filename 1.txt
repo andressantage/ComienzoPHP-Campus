@@ -1,0 +1,69 @@
+<?php 
+    /**
+     * indicar al navegador que se va a enviar un archivo PDF en la respuesta HTTP. Esto es útil cuando deseas generar o enviar un archivo PDF desde tu script de PHP.
+     * header("Content-type: application/pdf");
+     */
+
+    /**
+     * es para mostrar la información de configuración de PHP en una página web
+     * echo phpinfo(); 
+     */
+
+    /**
+     * !Imprime texto:
+     * echo "Texto a imprimir"; 
+     */
+    
+
+    /**
+     * Imprime 
+     * 
+     */
+    $texto = "Mundo";
+    printf("Hola vale %s\n", $texto);
+
+    //$mensaje=sprintf("Hola vale %s\n",$texto)
+    //echo $mensaje;
+    //define('MENSAJE','Mundo');
+    //define('NUMBER',1000);
+    //var_dump(MENSAJE,NUMBER);
+
+    /**
+     * !Tipos de datos 
+     * *Boleano
+     * $logueado=true; 
+     * var_dump($logueado);
+     * 
+     * *Floats
+     * $float=200
+     *  var_dump($float); 
+     * 
+     * *String
+     * $nombre="Juan";
+     * var_dump($nombre);
+     * 
+     * *Numeros
+     * $numero=200;
+     * var_dump($numero);
+     * 
+     * *arrays
+     * $array=[1,2,3];
+     * var_dump($array);
+     * 
+     * 
+     */
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php echo "Hola"; ?>
+
+    </script>
+</html>
