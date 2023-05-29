@@ -9,7 +9,7 @@
      *   ?//Aqui va el codigo
      * ?//?>
      * !Comando para comprobar el servidor
-      * php -S localhost:3000
+     * php -S localhost:3000
      */
 
       /**6)
@@ -29,6 +29,22 @@
        * echo $mensaje;
        */
 
+       /**7)
+        * !Variables y constantes
+        * !Definir variables
+        * Las variables se definen con $nombre_variable
+        * $edad=25; //numerica
+        * $nombre="Soy"; //texto
+        * $es_true=true; //boleana
+        * 
+        * para imprimir tipo de dato:
+        * echo var_dump($nombre); //en este caso imprimira string(3), indicando que es un string con 3 caracteres
+        * 
+        * !Definir constantes
+        * define("PI",3.14156); //define constante numerica
+        * define("SALUDO","Hola Mundo!"); //define constante de texto
+        * define("ES_VALIDO",true); //define constante boleana
+        */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +56,5 @@
 </head>
 <body>
     <?php echo "Hola"; ?>
-
-    </script>
+</body>
 </html>
