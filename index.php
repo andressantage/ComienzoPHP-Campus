@@ -8,12 +8,26 @@
      * ?//<?php 
      *   ?//Aqui va el codigo
      * ?//?>
+     * !Comando para comprobar el servidor
+      * php -S localhost:3000
      */
 
-     /**
-      * !Comando para comprobar el servidor
-      * php -S localhost:3000
-      */
+      /**6)
+       * !Funciones de salida en PHP
+       * *echo() //para imprimir y es muy comun, sirve para texto y etiquetas
+       * echo "Texto a imprimir";
+       * 
+       * el %s es para indicar que es una cadena de texto
+       * 
+       * *print() //solo puede imprimir cadena de texto
+       * $texto="Mundo";
+       * printf("Hola %s", $texto);
+       * 
+       * *sprintf() //devuelve cadena de texto formateada como resultado
+       * $texto="Mundo";
+       * $mensaje=sprintf("Hola %s", $texto);
+       * echo $mensaje;
+       */
 
 ?>
 <!DOCTYPE html>
