@@ -45,6 +45,53 @@
         * define("SALUDO","Hola Mundo!"); //define constante de texto
         * define("ES_VALIDO",true); //define constante boleana
         */
+
+       /**8)
+        * !Tipos de datos
+        * *Boleano //es para true o false
+        * $logueado=true; 
+        * var_dump($logueado);
+        * 
+        * *Floats
+        * $float=200.18
+        *  var_dump($float); 
+        * 
+        * *Strings
+        * $nombre="Juan";
+        * var_dump($nombre);
+        * 
+        * *Numeros
+        * $numero=200;
+        * var_dump($numero);
+        * 
+        * *Arrays
+        * $array=[1,2,3];
+        * var_dump($array);
+        * 
+        * *Objects //para instancias de clases que son definiciones de objetos
+        * class Persona {
+            public $nombre;
+            public $edad;
+
+            public function __construct($nombre, $edad) {
+                $this->nombre = $nombre;
+                $this->edad = $edad;
+            }
+
+            public function saludar() {
+                echo "Hola, mi nombre es " . $this->nombre . " y tengo " . $this->edad . " años.";
+            }
+          }
+        * var_dump(Persona);
+        *
+        * *Nullos //representa una variable sin valor o sin definir
+        * $variableSinValor = null;
+        * var_dump($variableSinValor);
+        * 
+        * *Recursos (resource) //para almacenar referencias a recuersos externos ejemplo: conexiones a bases de datos
+        * $conexion = mysqli_connect($host, $user, $password, $database);
+        * var_dump($conexion);
+        */
 ?>
 <!DOCTYPE html>
 <html lang="en">
