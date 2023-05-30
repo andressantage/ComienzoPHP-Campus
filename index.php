@@ -132,12 +132,7 @@
          * echo "<br/>;
          * 
          * var_dump($num2<=>$num1);
-         * echo "<br/>;
-         * 
-         * 
-         * 
-         * 
-         * 
+         * echo "<br/>;sd
          */
 ?>
 <!DOCTYPE html>
