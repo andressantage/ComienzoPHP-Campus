@@ -92,6 +92,53 @@
         * $conexion = mysqli_connect($host, $user, $password, $database);
         * var_dump($conexion);
         */
+
+        /**9)
+         * !Números y operadores
+         * En PHP principalmente hay diferentes operaciones básicas y complejas, algunos ejemplos son: 
+         * !Arithmetic 
+         * $num1=2;
+         * $num2=3;
+         * $num3=3;
+         * $num4="30";
+         * 
+         * var_dump($num1>$num2);
+         * echo "<br/>;
+         * 
+         * var_dump($num1>=$num2);
+         * echo "<br/>;
+         * 
+         * var_dump($num1<=$num2);
+         * echo "<br/>;
+         * 
+         * var_dump($num1==$num2);
+         * echo "<br/>;
+         * 
+         * var_dump($num2==$num3);
+         * echo "<br/>;
+         * 
+         * var_dump($num2==$num4);
+         * echo "<br/>;
+         * 
+         * ? resultados segun comparadores logicos
+         * ? -1 es para si es izquierda o menor
+         * ? 0 si es igual
+         * ? 1 si izquierda es mayor
+         * 
+         * var_dump($num1<=>$num2);
+         * echo "<br/>;
+         * 
+         * var_dump($num1<=>$num3);
+         * echo "<br/>;
+         * 
+         * var_dump($num2<=>$num1);
+         * echo "<br/>;
+         * 
+         * 
+         * 
+         * 
+         * 
+         */
 ?>
 <!DOCTYPE html>
 <html lang="en">
