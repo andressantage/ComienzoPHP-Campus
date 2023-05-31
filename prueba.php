@@ -34,6 +34,20 @@
 
     echo "<br>".$miArrayAsociativo["clave1"]."<br>"; //imprime el valor con la clave1
 
+    //otra forma de escribir un arreglo con claves y valores
+    echo "Otra forma de arreglo asociativo<br>"; 
+    $cliente=[
+        'nombre'=>'jose',
+        'saldos'=>[10,20]
+    ];
+    echo "Valor ".$cliente['nombre']."<br>";
+    $cliente['nombre']='Juan'; //se cambia valor de clave por Juan
+    echo "Valor ".$cliente['nombre']."<br>";
+    echo "Valor ".$cliente['saldos'][0]."<br>"; //funciona como una matriz
+    echo "<pre>";
+    var_dump($cliente);
+    echo "</pre>";
+
     echo "push<br>";
     array_push($miArreglo,'Valor agregado al final'); //añade elemento al final
 
@@ -188,6 +202,134 @@
     foreach($miArreglo as $clave => $valor){ //itera de manera sencilla sobre elementos de un arreglo y realizar operaciones en cada elemento
         echo "Clave: ".$clave.", Valor: ".$valor."<br>"; //clave y valor seran los respectivos claves y valores de cada elemento en el array
     }
+
+    echo "sort<br>";
+    $miArreglo = array(1,3,6,5,4);
+    sort($miArreglo); //ordena de menor a mayor el array
+    echo "<pre>";
+    var_dump($miArreglo); 
+    echo "</pre>";
+
+    echo "rsort<br>";
+    rsort($miArreglo); //ordena de mayor a menor el array
+    echo "<pre>";
+    var_dump($miArreglo);
+    echo "</pre>";
+
+    echo "asort<br>";
+    $miArreglo = array('a2','a1','ba','bc');
+    asort($miArreglo); //ordena de forma alfabetica los valores
+    echo "<pre>";
+    var_dump($miArreglo);
+    echo "</pre>";
+
+    echo "arsort<br>";
+    $miArreglo = array('a2','a1','ba','bc');
+    arsort($miArreglo); //ordena de forma alfabetica al reves los valores
+    echo "<pre>";
+    var_dump($miArreglo);
+    echo "</pre>";
+
+    echo "ksort<br>";
+    $miArreglo = array('a'=>'a2','c'=>'a1','d'=>'ba','b'=>'bc');
+    ksort($miArreglo); //ordena de forma alfabetica con las llaves
+    echo "<pre>";
+    var_dump($miArreglo);
+    echo "</pre>";
+
+    echo "krsort<br>";
+    $miArreglo = array('a'=>'a2','c'=>'a1','d'=>'ba','b'=>'bc');
+    krsort($miArreglo); //ordena de forma alfabetica al reves con las llaves
+    echo "<pre>";
+    var_dump($miArreglo);
+    echo "</pre>";
+
+    /**11)
+     * !Isset() y Empty()
+     */
+    
+    /**
+     * *Isset()
+     */
+    $miVariable="Hola";
+    if(isset($miVariable)){ //la parte del isset($miVariable) dara true o false dependiendo si es indefinida o null
+        echo "La variable esta definida o no es null<br>";
+    }else{
+        echo "La variable esta indefinida o es null<br>";
+    }
+
+    /**
+     * *Empty()
+     */
+    $miVariable="";
+    if(empty($miVariable)){ //la parte del empty($miVariable) dara true o false dependiendo si tiene un valor o no
+        echo "La variable esta vacia o no esta definida<br>";
+    }else{
+        echo "La variable tiene un valor<br>";
+    }
+
+    /**12)
+     * !Estructuras de control
+     * En funcion de ciertas condiciones realiza ciertas acciones
+     * ejemplos: for, while, if, switch, try, catch...
+     */
+    
+    /**
+     * *Estructuras condicionales
+     */
+    echo "if, else if, else<br>";
+    $valor=2;
+    if($valor===3){
+        echo "con el solo if<br>";
+    }else if($valor===2){
+        echo "con else if<br>";
+    }else{
+        echo "con el else<br>";
+    }
+
+    echo "switch<br>";
+    $valor=2;
+    switch($valor){
+        case 1: //en caso de $valor=1
+            echo "es 1 $valor<br>";
+            break;
+        case 2: //en caso de $valor=2
+            echo "es 2 $valor<br>";
+            break;
+        default:
+            echo "es ninguno $valor<br>";
+            break;
+    }
+
+    /**
+     * *Estructuras repetitivas
+     */
+    echo "while<br>";
+    $i=0;
+    while($i<3){
+        echo $i."<br>";
+        $i++; //incrementa
+    }
+
+    echo "do while<br>";
+    $i=0;
+    do{
+        echo $i."<br>";
+        $i++; //incrementa
+    }while($i<2);
+
+    /**13)
+     * !Funciones definidas por el usuario
+     * es lo mismo que cualquier otra funcion en python o javascript
+     */
+    
+    /**
+     * *Funciones en PHP
+     */
+
+
+
+
 
 
 ?>
