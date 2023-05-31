@@ -183,6 +183,13 @@
     echo "¿Existe la clave 'clave1'? " . ($existeClave1 ? "Sí" : "No") . "<br>";
     echo "¿Existe la clave 'clave4'? " . ($existeClave4 ? "Sí" : "No") . "<br>";
 
+    echo "<br>foreach<br>";
+    $miArreglo = array("clave1" => "valor1", "clave2" => "valor2", "clave3" => "valor3");
+    foreach($miArreglo as $clave => $valor){ //itera de manera sencilla sobre elementos de un arreglo y realizar operaciones en cada elemento
+        echo "Clave: ".$clave.", Valor: ".$valor."<br>"; //clave y valor seran los respectivos claves y valores de cada elemento en el array
+    }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
