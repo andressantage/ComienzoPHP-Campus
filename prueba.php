@@ -325,9 +325,17 @@
     
     /**
      * *Funciones en PHP
+     * una funcion que no retorna un valor se llama "void" aunque esta palabra no es necesario usarla aunque es una buena practica usarla
      */
 
+     /**
+      **Funcion que no retorna un valor
+      */
 
+      function sumar(int $num1=0, array $num2):void{
+        echo $num1+$num2;
+      }
+      sumar(10,[]);
 
 
 
