@@ -5,11 +5,11 @@
         $_SESSION['num2']='';
         $_SESSION['opera']='';
     }
-
-   if(!isset($_SESSION['correo'])){
+/* 
+   if(isset($_SESSION['correo'])){
         header('Location: login.php');
         exit;
-    } 
+    }  */
 
     if (!isset($_POST['opera']) && !isset($_SESSION['revisar'])) {
         if (isset($_POST['numero'])) {
