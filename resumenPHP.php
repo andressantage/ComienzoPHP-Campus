@@ -617,6 +617,69 @@
         echo $i."<br>";
         $i++;
     }while($i<2);
+
+
+     /**
+     * SECCION 11
+     * !Funciones definidas por el usuario
+     * son bloques de codigo que se pueden llamar y ejecutar en cualquier parte del programa
+     * permiten: modularizacion y reutilizabilidad
+     * componentes: valor de retorno (puede retornar un valor o no ), codigo dentro de funcion, variables locales (tomaran la asignacion de los parametros dados por el usuario) y globales
+     */
+
+   /**
+    * *Funciones en PHP
+    *? Estructura: 
+    * function nombreFuncion(parametro1, parametro2){
+    *        Aqui va el codigo que se ejecutara;
+    *       return Valor;
+    * };
+    */
+
+    /**
+     * *Funciones que no retornan valor
+     * ? palabra void: se usa para definir una funcion que no retorna ningun valor
+     * ! es una buena practica usar void para funciones que no retorna un valor
+     */
+     /**
+      * Ejemplo de funcion donde se le asignan dos parametros 
+      * tambien se pone la palabra void ya que no retorna nada
+      * el int $numero=0, es para asignar en caso de no ponerse ningun valor el valor que se le da al parametro
+      */
+    declare(strict_types=1);
+    function sumar(int $numero1=0, $numero2):void{
+        echo $numero1+$numero2;
+    }
+    sumar(10, 2);
+    echo "<br>"; 
+
+    /**
+     * *Funciones que retornan valor
+     * ? en este caso no se usa la palabra void
+     * retornan un valor
+     */
+     /**
+      * Ejemplo de funcion donde se le asigna un parametro
+      * en este caso se predefine que debe ser boleano
+      * retornar un valor string en vaso de estar autenticado ?string
+      * en caso de no se true retornara null, es decir nada
+      */
+      declare(strict_types=1);
+      function usuarioAutenticado(bool $autenticado): ?string {
+        if($autenticado){
+            return "El usuario esta autenticado";
+        }else{
+            return null;
+        }
+      }
+      $usuario=usuarioAutenticado(false);
+      echo $usuario;
+      echo "<br>"; 
+     /**
+      * en las funciones se utiliza el : para definir que tipo de variable va a retornar seguido del simbolo ?
+      * solo en caso de que vaya a retornar y luego al lado se pone el tipo de dato a retornar 
+      */
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
