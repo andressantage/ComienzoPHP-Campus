@@ -1,0 +1,5 @@
+muchachos para aclarar una clase abstracta: se implementa lo escencial y basico para utilizar, palabra clave EXTENDS, la clave derivada puede heredar tanto metodos concretos como metodos abstractos (como lo explique en la exposicion) ; interfaz: define los metodos no se incluye NINGUNA IMPLEMENTACION, parabra clave IMPLEMENTS permitiendo que la clase pueda definir en todas las interfaces que ha declarado.
+
+Tanto las clases abstractas como las interfaces pueden definir propiedades, pero en una interfaz solo se pueden definir constantes (propiedades con valores constantes que no pueden modificarse).
+
+En resumen, las clases abstractas proporcionan una estructura base común para las clases derivadas, pueden contener métodos concretos y abstractos, y permiten herencia única. Las interfaces, por otro lado, definen contratos que las clases deben cumplir, solo contienen métodos sin implementación y permiten la implementación de múltiples interfaces. La elección entre clases abstractas e interfaces depende del diseño y las necesidades específicas de tu aplicación.

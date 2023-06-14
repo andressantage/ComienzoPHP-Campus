@@ -1,0 +1,5 @@
+Hacer windows+x 
+ir a administrador de dispositivos 
+luego ir a puertos COM y LPT
+    e ir a Arduino UNO 
+luego darle ahi encima deinstalar dispositivo  
